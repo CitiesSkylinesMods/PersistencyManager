@@ -3,7 +3,14 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersistencyManager", "PersistencyManager\PersistencyManager.csproj", "{2F4498FD-753F-4C79-9C2B-41106FB4D2C0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PersistencyManager", "PersistencyManager\PersistencyManager.csproj", "{2F4498FD-753F-4C79-9C2B-41106FB4D2C0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{95145462-F8DB-4D37-9FF7-CD5685FF4BEB}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		LICENSE = LICENSE
+		.github\workflows\Main.yml = .github\workflows\Main.yml
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
