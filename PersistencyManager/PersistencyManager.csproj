@@ -37,11 +37,25 @@
     </Reference>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <PackageReference Include="CitiesHarmony.API" Version="2.0.0" />
+    <PackageReference Include="Mono.Unofficial.pdb2mdb" Version="4.2.3.4" />
+    <PackageReference Include="GitInfo" Version="2.1.2">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Assembly-CSharp" />
+    <Reference Include="ColossalManaged" />
+    <Reference Include="ICities" />
+    <Reference Include="UnityEngine" />
+    <Reference Include="UnityEngine.UI" />
+    <Reference Include="MoveItIntegration" />
+  </ItemGroup>
+  <ItemGroup>
     <Compile Remove="KianCommons\**" />
     <EmbeddedResource Remove="KianCommons\**" />
     <None Remove="KianCommons\**" />
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="KianCommons\KianCommons\IImplict\IMod.cs" />
     <Compile Include="KianCommons\KianCommons\IImplict\IMonoBehaviour.cs" />
     <Compile Include="KianCommons\KianCommons\Math\BezierUtil.cs" />
@@ -62,22 +76,6 @@
     <Compile Include="KianCommons\KianCommons\Util\NetUtil.cs" />
     <Compile Include="KianCommons\KianCommons\Util\ReflectionHelpers.cs" />
     <Compile Include="KianCommons\KianCommons\Util\StringExtensions.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <PackageReference Include="CitiesHarmony.API" Version="2.0.0" />
-    <PackageReference Include="Mono.Unofficial.pdb2mdb" Version="4.2.3.4" />
-    <PackageReference Include="GitInfo" Version="2.1.2">
-      <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-    </PackageReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Reference Include="Assembly-CSharp" />
-    <Reference Include="ColossalManaged" />
-    <Reference Include="ICities" />
-    <Reference Include="UnityEngine" />
-    <Reference Include="UnityEngine.UI" />
-    <Reference Include="CSUtil.Commons" />
   </ItemGroup>
   <Target Name="DeployToModDirectory" AfterTargets="Build">
     <Message Importance="high" Text="DeployToModDirectory ..." />
