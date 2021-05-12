@@ -1,0 +1,15 @@
+Copy data when only one segment of a node is replaced:
+    1- patch NetManager.PreReleaseSegmentImplementation():
+        - to make a record of the nodes whose segments is being destroyed.
+        - and their current segment lists.
+    2- after simulation step:
+        - for each node from step 1:
+            - compare old segments to new segments to calculate: old, new, still, deleted, added
+            - then create map and copy data accordingly.
+Copy data when segment is upgrading:       
+            - make sure to copy segment data too, this helps when segment is upgrading.
+
+Copy data when node moves:
+    - patch MoveMiddle node
+    - prefix: make record of node and nearby segments.
+    - postfix: if new node is created, then map and paste all data.
