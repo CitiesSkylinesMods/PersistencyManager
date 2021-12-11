@@ -8,14 +8,11 @@ Details:
 This mod will persist data in the following scenarios all in one place:
 
 - [ ] when move it copies stuff to new place (obviously!)
-
 - [ ] when user loads/saves game
-
 - [ ] when user loads/saves intersections in asset editor
-
 - [ ] when user splits segments or moves node using the road tool.
-
 - [ ] when user splits/merges segments using 3rd party mod (e.g. NMT or Roundabout Builder)
+- [ ] undo/redo operation (might need to define a couple of more methods for this).
 
 This will be a stand alone library. the using mod need to include this library in their own code and Enable/Disable it when their own mod is enabled/disabled.
 
